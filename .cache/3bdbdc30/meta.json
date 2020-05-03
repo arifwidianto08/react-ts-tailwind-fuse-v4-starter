@@ -1,18 +1,19 @@
 {
-  "currentId": 21,
+  "currentId": 30,
   "modules": {
     "1": {
       "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/index.tsx",
       "dependencies": [
-        9,
+        2,
         6,
         8,
-        2,
+        9,
         4,
-        5
+        5,
+        22
       ],
       "id": 1,
-      "mtime": 1588511452319,
+      "mtime": 1588522246737,
       "packageId": "default",
       "publicPath": "src/index.tsx"
     },
@@ -78,11 +79,10 @@
       "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/App.tsx",
       "dependencies": [
         4,
-        11,
-        12
+        23
       ],
       "id": 8,
-      "mtime": 1588511452278,
+      "mtime": 1588523229304,
       "packageId": "default",
       "publicPath": "src/App.tsx"
     },
@@ -206,6 +206,98 @@
       "mtime": 1587403015062,
       "packageId": "scheduler@0.19.1",
       "publicPath": "node_modules/scheduler/cjs/scheduler.development.js"
+    },
+    "22": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/assets/css/main.css",
+      "dependencies": [
+        7
+      ],
+      "id": 22,
+      "mtime": 1588523158718,
+      "packageId": "default",
+      "publicPath": "src/assets/css/main.css"
+    },
+    "23": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/screens/index.ts",
+      "dependencies": [
+        24,
+        29
+      ],
+      "id": 23,
+      "mtime": 1588523220608,
+      "packageId": "default",
+      "publicPath": "src/views/screens/index.ts"
+    },
+    "24": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/screens/public/index.ts",
+      "dependencies": [
+        25
+      ],
+      "id": 24,
+      "mtime": 1588523072666,
+      "packageId": "default",
+      "publicPath": "src/views/screens/public/index.ts"
+    },
+    "25": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/screens/public/signin-screen.tsx",
+      "dependencies": [
+        4,
+        26
+      ],
+      "id": 25,
+      "mtime": 1588523107534,
+      "packageId": "default",
+      "publicPath": "src/views/screens/public/signin-screen.tsx"
+    },
+    "26": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/components/index.ts",
+      "dependencies": [
+        27
+      ],
+      "id": 26,
+      "mtime": 1588522777397,
+      "packageId": "default",
+      "publicPath": "src/views/components/index.ts"
+    },
+    "27": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/components/forms/index.ts",
+      "dependencies": [
+        28
+      ],
+      "id": 27,
+      "mtime": 1588522774221,
+      "packageId": "default",
+      "publicPath": "src/views/components/forms/index.ts"
+    },
+    "28": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/components/forms/login-form.tsx",
+      "dependencies": [
+        4
+      ],
+      "id": 28,
+      "mtime": 1588524246898,
+      "packageId": "default",
+      "publicPath": "src/views/components/forms/login-form.tsx"
+    },
+    "29": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/screens/private/index.ts",
+      "dependencies": [
+        30
+      ],
+      "id": 29,
+      "mtime": 1588523212381,
+      "packageId": "default",
+      "publicPath": "src/views/screens/private/index.ts"
+    },
+    "30": {
+      "absPath": "/mnt/c/Users/arifj/Documents/Learn/react-16.13.1/src/views/screens/private/home.tsx",
+      "dependencies": [
+        4
+      ],
+      "id": 30,
+      "mtime": 1588523200284,
+      "packageId": "default",
+      "publicPath": "src/views/screens/private/home.tsx"
     }
   },
   "packages": {

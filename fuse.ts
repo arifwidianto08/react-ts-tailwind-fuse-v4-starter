@@ -1,4 +1,4 @@
-import { fusebox, sparky } from "fuse-box";
+import { fusebox, sparky, pluginPostCSS, pluginCSS } from "fuse-box";
 import { generateSW } from "workbox-build";
 
 class Context {
@@ -27,6 +27,10 @@ class Context {
       watcher: {
         include: ["./src/**"],
       },
+      plugins: [
+        pluginPostCSS([require("tailwindcss"), require("autoprefixer")] as any),
+        pluginCSS(),
+      ] as any,
     });
   }
 }
