@@ -13,6 +13,8 @@
     "autoprefixer": "^9.7.6",
     "axios": "^0.19.2",
     "fuse-box": "^4.0.0-next.430",
+    "lodash": "^4.17.15",
+    "query-string": "^6.12.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -21,9 +23,9 @@
   },
   "scripts": {
     "clean": "rimraf ./.fusebox ./dist",
-    "start": "yarn build:css && cross-env NODE_ENV=development ts-node -T fuse",
+    "start": "yarn clean && yarn build:css && cross-env NODE_ENV=development ts-node -T fuse",
     "build": "react-scripts build",
-    "dist": "yarn build:css cross-env NODE_ENV=production ts-node -T fuse dist",
+    "dist": "yarn clean && yarn build:css cross-env NODE_ENV=production ts-node -T fuse dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "tailwind build src/tailwind.css -o src/assets/css/main.css",
@@ -45,10 +47,12 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.150",
     "@types/workbox-build": "^5.0.0",
     "cross-env": "^7.0.2",
     "path": "^0.12.7",
     "rimraf": "^3.0.2",
+    "stylelint-config-recommended": "^3.0.0",
     "ts-node": "^8.10.1",
     "workbox-build": "^5.1.3"
   }
