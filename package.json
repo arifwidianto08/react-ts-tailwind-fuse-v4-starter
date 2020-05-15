@@ -29,7 +29,7 @@
     "clean": "rimraf ./.fusebox ./dist",
     "start": "yarn clean && yarn build:css && cross-env NODE_ENV=development ts-node -T fuse",
     "build": "react-scripts build",
-    "dist": "yarn clean && yarn build:css cross-env NODE_ENV=production ts-node -T fuse dist",
+    "dist": "yarn clean && yarn build:css && cross-env NODE_ENV=production ts-node -T fuse dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "tailwind build src/tailwind.css -o src/assets/css/main.css",

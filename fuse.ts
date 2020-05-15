@@ -50,17 +50,10 @@ task("preview", async (ctx) => {
   await fuse.runProd({ uglify: false });
 });
 
-task("dist", async (ctx) => {
-  ctx.runServer = false;
-  ctx.isProduction = true;
-  const fuse = ctx.getConfig();
-  await fuse.runProd({ uglify: false });
-});
-
 task("sw", async () => {
   await generateSW({
-    swDest: "dist/web/service-worker.js",
-    globDirectory: "dist/web/",
+    swDest: "dist/service-worker.js",
+    globDirectory: "dist/",
     globPatterns: ["**/*.{js,png,css,json,html}"],
   });
 });
@@ -72,7 +65,7 @@ task("build-prod", async (ctx) => {
   ctx.isProduction = true;
 
   const fuse = ctx.getConfig();
-  await fuse.runProd({ uglify: false });
+  await fuse.runProd({ uglify: true });
 });
 
 task("dist", async () => {
